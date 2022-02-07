@@ -2,19 +2,26 @@ require './classes/book'
 require_relative './music_album'
 require_relative './genre'
 require './classes/label'
+require './classes/game'
+require './classes/author'
 require './modules/preserver_module'
 
 class App
   include PreserverModule
 
-  attr_reader :books, :labels
+  attr_reader :books, :labels, :games, :authors
 
   def initialize
     @books = []
     @labels = []
+    @games = []
+    @authors = []
+    @albums = []
+    @genres = []
 
     load_data
   end
+
 
   def add_book(new_book)
     new_book_instance = Book.new(*new_book)
@@ -109,11 +116,59 @@ class App
     end
   end
 
+  def add_game(game_name, last_played_at, multiplayer)
+    new_game_instance = Game.new(game_name, last_played_at, multiplayer)
+    hash = {
+      'game_name' => new_game_instance.game_name,
+      'last_played_at' => new_game_instance.last_played_at,
+      'multiplayer' => new_game_instance.multiplayer
+    }
+    @games << hash
+  end
+
+  def add_author(_new_author)
+    new_author_instance = Author.new(first_name, last_name)
+    hash = {
+      'first_name' => new_author_instance.first_name,
+      'last_name' => new_author_instance.last_name
+    }
+    @authors << hash
+  end
+
+  def list_all_games
+    puts "\nNote: No games available." if @games.empty?
+
+    puts "\n----------------------------"
+    puts "\nALL GAMES\n\n"
+    puts "\Games \t| Multiplayer \t| Last Played At"
+    puts '----------------------------'
+    @games.each do |game|
+      puts "\t #{game['game_name']} \t#{game['last_played_at']} \t| #{game['multiplayer']}"
+      puts "\n-------------------------------------------------"
+    end
+  end
+
+  def list_all_authors
+    puts "\nNote: No authors available." if @authors.empty?
+
+    puts "\n----------------------------"
+    puts "\nALL AUTHORS\n\n"
+    puts "\First Name \t| Last Name"
+    puts '----------------------------'
+    @authors.each do |author|
+      puts "#{author['first_name']} \t| #{author['last_name']}"
+      puts "\n-------------------------------------------------"
+    end
+  end
+
+
   def preserve_files
     save_data_as_json(@books, 'books')
     save_data_as_json(@labels, 'labels')
     save_data_as_json(@albums, 'albums')
     save_data_as_json(@genres, 'genres')
+    save_data_as_json(@games, 'games')
+    save_data_as_json(@authors, 'authors')
   end
 
   private
@@ -123,5 +178,7 @@ class App
     @labels = load_file('labels')
     @albums = load_file('albums')
     @genres = load_file('genres')
+    @games = load_file('games')
+    @authors = load_file('authors')
   end
 end
