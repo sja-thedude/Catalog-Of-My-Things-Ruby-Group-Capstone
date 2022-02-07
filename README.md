@@ -38,9 +38,9 @@
 
 👤 **Karel van Oordt**
 
-- GitHub: [@githubhandle](https://github.com/)
-- Twitter: [@twitterhandle](https://twitter.com/)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/)
+- GitHub: [@githubhandle](https://github.com/karelvanoordt)
+- Twitter: [@twitterhandle](https://twitter.com/karelvanoordt)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/karelvanoordt)
 
 ## 🤝 Contributing
 
