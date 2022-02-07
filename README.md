@@ -28,12 +28,11 @@
 
 - GitHub: [@sja-thedude](https://github.com/sja-thedude)
 - Twitter: [@sja_thedude](https://twitter.com/sja_thedude)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/sja)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/sja-thedude/)
 
 👤 **Ugboaja Uchechi**
 
 - GitHub: [@githubhandle](https://github.com/Ugboaja-Uchechi)
-
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/stephanie-ugboaja-930a2a216/)
 
 👤 **Karel van Oordt**
