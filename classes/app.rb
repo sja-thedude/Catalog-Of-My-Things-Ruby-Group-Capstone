@@ -89,7 +89,9 @@ class App
     puts "\Genre \t| On spotify? \t| Album Name \t| Publish Date"
     puts '-------------------------------------------------------'
     @albums.each do |album|
-      puts "#{album['genre'].to_s.strip} \t| #{album['on_spotify?'].to_s.strip.rjust(10)} \t| #{album['album_name'].to_s.strip.rjust(10)} \t| #{album['publish_date'].to_s.strip.rjust(10)}"
+      puts "#{album['genre'].to_s.strip} \t| #{album['on_spotify?']
+      .to_s.strip.rjust(10)} \t| #{album['album_name'].to_s.strip.rjust(10)} \t| #{album['publish_date']
+      .to_s.strip.rjust(10)}"
       puts "\n---------------------------------------------------"
     end
   end
