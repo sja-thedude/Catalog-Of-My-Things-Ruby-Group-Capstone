@@ -1,1 +1,3 @@
-# music album
+class MusicAlbum
+
+end
