@@ -5,7 +5,6 @@ class Genre
     @id = Random.rand(1..1000)
     @name = name
     @items = []
-  
   end
 
   def add_item(item)
@@ -13,4 +12,3 @@ class Genre
     item.genre = self
   end
 end
-
