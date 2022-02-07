@@ -8,7 +8,10 @@ class Genre
   end
 
   def add_item(item)
-    @items << item unless @items.include?(item)
-    item.genre = self
+    if @items << item unless @items.include?(item)
+      puts 'item already exists'
+    else
+      @items.push(item)
+      item.genre = self
   end
 end
