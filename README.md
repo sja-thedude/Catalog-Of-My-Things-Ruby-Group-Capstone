@@ -32,9 +32,9 @@
 
 👤 **Ugboaja Uchechi**
 
-- GitHub: [@githubhandle](https://github.com/)
-- Twitter: [@twitterhandle](https://twitter.com/)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/)
+- GitHub: [@githubhandle](https://github.com/Ugboaja-Uchechi)
+
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/stephanie-ugboaja-930a2a216/)
 
 👤 **Karel van Oordt**
 
