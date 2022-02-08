@@ -6,6 +6,7 @@ require './modules/game_module'
 class Main
   include BookModule
   include MusicAlbumModule
+  include GameModule
 
   def initialize
     @app = App.new
@@ -46,7 +47,7 @@ class Main
     when '8'
       add_new_album_details
     when '9'
-      @app.add_new_game_details
+      add_new_game_details
     when '10'
       @app.preserve_files
       puts 'Exiting the application...'
