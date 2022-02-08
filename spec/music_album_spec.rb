@@ -8,4 +8,9 @@ describe MusicAlbum do
   it 'can has an instance' do
     expect(@musicalbum).to be_an_instance_of MusicAlbum
   end
+
+  it 'has on_spotify to be false' do
+    expect(@musicalbum.on_spotify).to be false
+  end
+
 end
