@@ -1,6 +1,7 @@
 require './classes/app'
 require './modules/book_module'
 require_relative './modules/music_album_module'
+require './modules/game_module'
 
 class Main
   include BookModule
@@ -45,7 +46,7 @@ class Main
     when '8'
       add_new_album_details
     when '9'
-      add_new_game_details
+      @app.add_new_game_details
     when '10'
       @app.preserve_files
       puts 'Exiting the application...'
