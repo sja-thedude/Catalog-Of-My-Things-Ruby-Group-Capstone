@@ -13,4 +13,7 @@ describe MusicAlbum do
     expect(@musicalbum.on_spotify).to be false
   end
 
+  it 'has name to be artist' do
+    expect(@musicalbum.name).to eq 'artist'
+  end
 end
