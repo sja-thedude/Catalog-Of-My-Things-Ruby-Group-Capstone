@@ -22,7 +22,6 @@ class App
     load_data
   end
 
-
   def add_book(new_book)
     new_book_instance = Book.new(*new_book)
     hash = {
@@ -160,7 +159,6 @@ class App
       puts "\n-------------------------------------------------"
     end
   end
-
 
   def preserve_files
     save_data_as_json(@books, 'books')
