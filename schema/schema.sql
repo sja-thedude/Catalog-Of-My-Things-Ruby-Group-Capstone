@@ -7,7 +7,8 @@ CREATE TABLE Label(
 );
 
 CREATE TABLE Genre(
-    //Member 2
+    id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    name VARCHAR(100)
 );
 
 CREATE TABLE Author(
