@@ -115,8 +115,8 @@ class App
     end
   end
 
-  def add_game(game_name, last_played_at, multiplayer)
-    new_game_instance = Game.new(game_name, last_played_at, multiplayer)
+  def add_game(new_game)
+    new_game_instance = Game.new(*new_game)
     hash = {
       'game_name' => new_game_instance.game_name,
       'last_played_at' => new_game_instance.last_played_at,
@@ -125,8 +125,8 @@ class App
     @games << hash
   end
 
-  def add_author(_new_author)
-    new_author_instance = Author.new(first_name, last_name)
+  def add_author(new_author)
+    new_author_instance = Author.new(*new_author)
     hash = {
       'first_name' => new_author_instance.first_name,
       'last_name' => new_author_instance.last_name
