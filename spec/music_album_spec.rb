@@ -16,4 +16,8 @@ describe MusicAlbum do
   it 'has name to be artist' do
     expect(@musicalbum.name).to eq 'artist'
   end
+
+  it 'has publish_date to be artist' do
+    expect(@musicalbum.publish_date).to eq '03/04/1990'
+  end
 end
