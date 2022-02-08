@@ -1,10 +1,12 @@
 require './classes/app'
 require './modules/book_module'
 require_relative './modules/music_album_module'
+require './modules/game_module'
 
 class Main
   include BookModule
   include MusicAlbumModule
+  include GameModule
 
   def initialize
     @app = App.new
@@ -33,19 +35,19 @@ class Main
     when '2'
       @app.list_all_albums
     when '3'
-      p 'TODO: all games method'
+      @app.list_all_games
     when '4'
       @app.list_all_genres
     when '5'
       @app.list_all_labels
     when '6'
-      p 'TODO: all authors method'
+      @app.list_all_authors
     when '7'
       add_new_book_details
     when '8'
       add_new_album_details
     when '9'
-      p 'TODO: add a game method'
+      add_new_game_details
     when '10'
       @app.preserve_files
       puts 'Exiting the application...'
